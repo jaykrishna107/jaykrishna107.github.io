@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* knoxAiautomation Design System - Light Beige Theme */
+
+@layer base {
+  :root {
+    --background: 35 30% 96%;
+    --foreground: 20 15% 15%;
+
+    --card: 35 25% 93%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 35 25% 93%;
+    --popover-foreground: 20 15% 15%;
+
+    --primary: 25 80% 50%;
+    --primary-foreground: 35 30% 98%;
+
+    --secondary: 35 20% 88%;
+    --secondary-foreground: 20 15% 20%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 25 80% 50%;
+    --accent-foreground: 35 30% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 35 30% 98%;
+
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 25 80% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(25 80% 50%), hsl(30 90% 55%));
+    --gradient-glow: linear-gradient(135deg, hsl(25 80% 50% / 0.15), hsl(30 90% 55% / 0.08));
+    --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(25 80% 50% / 0.1), transparent);
+    --shadow-glow: 0 0 40px -10px hsl(25 80% 50% / 0.4);
+    --shadow-card: 0 4px 40px -12px hsl(20 15% 15% / 0.08);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glass-card {
+    @apply bg-card/70 backdrop-blur-xl border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .btn-gradient {
+    background: var(--gradient-primary);
+    @apply text-primary-foreground font-semibold;
+    transition: all 0.3s ease;
+  }
+
+  .btn-gradient:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
