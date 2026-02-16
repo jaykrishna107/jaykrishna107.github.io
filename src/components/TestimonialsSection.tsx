@@ -3,47 +3,27 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO",
-    company: "TechStart Solutions",
-    feedback: "KnoxAI transformed our customer service. The AI receptionist handles 80% of inquiries automatically, saving us countless hours and improving response times dramatically.",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "Operations Manager",
-    company: "GrowthHub Agency",
-    feedback: "The website they built for us increased our conversion rate by 45%. Their AI chatbot captures leads even when we're asleep. Absolutely game-changing!",
-    rating: 5,
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Founder",
-    company: "Wellness Studio Pro",
-    feedback: "From booking appointments to answering FAQs, the AI handles it all. Our clients love the instant responses, and we've seen a 3x increase in bookings.",
-    rating: 5,
-  },
-  {
-    name: "David Park",
-    role: "Marketing Director",
-    company: "E-Commerce Plus",
-    feedback: "Professional, innovative, and results-driven. The team at KnoxAI delivered beyond our expectations. Our customer engagement has never been better.",
-    rating: 5,
-  },
-  {
-    name: "Amanda Foster",
-    role: "Owner",
-    company: "Real Estate Elite",
-    feedback: "The AI voice bot handles property inquiries 24/7. We've captured leads we would have missed otherwise. ROI was visible within the first month.",
-    rating: 5,
-  },
-  {
-    name: "James Mitchell",
-    role: "COO",
-    company: "FinServe Partners",
-    feedback: "Implementing their AI solutions reduced our customer support costs by 60% while improving satisfaction scores. Highly recommend their services.",
-    rating: 5,
-  },
+  name: "Dr. Brahmaramba",
+  role: "Managing Director",
+  company: "Springfield International School",
+  feedback: "Implementing KnoxAI completely streamlined our admission and inquiry process. Parents now receive instant responses regarding admissions, fee structure, and schedules. It has significantly reduced the workload on our front desk staff while improving parent satisfaction.",
+  rating: 5,
+},
+{
+  name: "AVINASH REDDY CHEJARLA",
+  role: "CEO",
+  company: "Anu Furniture",
+  feedback: "KnoxAI helped us automate customer inquiries and product queries 24/7. Our website now captures leads even after business hours, and we've noticed a clear increase in showroom visits and serious buyers. The automation has made our sales process much more efficient.",
+  rating: 5,
+},
+{
+  name: "Anvith Vedanabatla",
+  role: "Owner",
+  company: "Spice Garden Restaurant",
+  feedback: "The AI system handles table reservations and common customer questions smoothly. We've reduced missed calls and improved response time significantly. While we're still exploring more features, the results so far have been very promising.",
+  rating: 4,
+},
+
 ];
 
 export const TestimonialsSection = () => {
